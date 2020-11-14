@@ -171,7 +171,7 @@ def name():
 
 
 def edit_button():
-    editButton = Button(text="Save edit", command=edit)
+    editButton = Button(text="Save edit")  # command=edit)
     editButton.place(x=590, y=120)
 
 

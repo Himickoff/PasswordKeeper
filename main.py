@@ -175,22 +175,22 @@ def edit_button():
     editButton.place(x=590, y=120)
 
 
-def edit():
-    # text = create_text()
-    save = panel.get('1.0', END)
-    key = load_key()
-    file1 = 'mainFile.txt'  # File with data
-    try:
-        decrypt(file1, key)
-    except:  # if no file, create it
-        file = open('mainFile.txt', 'w')
-        file.close()
-    # Create variable with data from input
-    file = open('mainFile.txt', 'w')
-    file.write(save)
-    file.close()
-    encrypt(file1, key)
-    input_window("Edit done successful")
+# def edit():
+#     # text = create_text()
+#     save = panel.get('1.0', END)
+#     key = load_key()
+#     file1 = 'mainFile.txt'  # File with data
+#     try:
+#         decrypt(file1, key)
+#     except:  # if no file, create it
+#         file = open('mainFile.txt', 'w')
+#         file.close()
+#     # Create variable with data from input
+#     file = open('mainFile.txt', 'w')
+#     file.write(save)
+#     file.close()
+#     encrypt(file1, key)
+#     input_window("Edit done successful")
 
 
 root = Tk()  # Create window
